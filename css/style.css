@@ -10,6 +10,7 @@ body{
     height: 100vh;
     position: relative;
     box-sizing: border-box;
+    /* background-color: black; */
 }
 
 header{
@@ -142,5 +143,90 @@ nav{
     }
     .nav-toggle.active span:nth-child(3){
         transform: translateY(-9px) rotate(-45deg);
+    }
+    .hero{
+        background-size: cover;
+        background-position: calc(65%);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1260px){
+    header{
+        padding: 5px 20px;
+        overflow: hidden;
+    }
+}
+
+/* advantages section */
+
+.advantages{
+    color: white;
+    background-color: black;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.container h2{
+    font-size: 40px;
+    color: white;
+}
+
+.ad-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 60px 0;
+}
+
+.ad-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60%;
+}
+
+#ad-img1 img{
+    width: 59px;
+    height: 59px;
+    object-fit: contain;
+}
+
+.head-text{
+    color: yellow;
+    font-size: 115%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.nor-text{
+    line-height: 20px;
+}
+
+@media(max-width:770px){
+    .ad-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 60px 0;
+    }
+    .ad-item{
+        width: 100%;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 20px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1260px){
+    .advantages{
+        padding: 0 20px;
     }
 }
