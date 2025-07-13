@@ -190,7 +190,7 @@ nav{
     width: 60%;
 }
 
-#ad-img1 img{
+.ad-img img{
     width: 59px;
     height: 59px;
     object-fit: contain;
@@ -251,14 +251,18 @@ nav{
 
 .member-item{
     background-color: #222222;
-    min-height: 350px;
+    min-height: 330px;
     padding: 30px;
     border-radius: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     position: relative;
+    transition: all 0.3s ease;
 }
 
+.member-item:hover{
+    scale: 1.05;
+}
 .pass{
     font-size: 140%;
     text-align: center;
@@ -295,4 +299,98 @@ li{
     height: 40px;
     border-radius: 10px;
     background-color: yellow;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#buy:hover{
+    background-color: rgb(190, 190, 20);
+}
+
+@media(max-width:770px){
+    #member-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 770px) and (max-width: 1260px){
+    #member-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .membership{
+        padding: 0 20px;
+    }
+}
+
+/* about section */
+.about{
+    background-color: black;
+    color: white;
+}
+
+.about-item{
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+
+#about-txt p{
+    padding: 10px 0;
+}
+
+#about-txt h2{
+    padding: 30px 0;
+}
+
+#slider img{
+    width: 100%;
+    height: 350px;
+}
+
+#img-controlar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#arrow-controler{
+    display: flex;
+    gap: 20px;
+}
+
+.arrow{
+    background-color: black;
+    transform: none;
+    border: none;
+    cursor: pointer;
+}
+
+#indicator{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: none;
+}
+
+#indicator span{
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    color: white;
+}
+
+@media(max-width:770px){
+    .about-item{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 770px) and (max-width: 1260px){
+    .about-item{
+        padding: 100px 20px;
+    }
 }
