@@ -28,3 +28,14 @@ section.forEach(anchor=>{
         })}
     });
 });
+
+// header background change
+const header= document.querySelector("header");
+window.addEventListener("scroll", function(){
+    if(window.scrollY>50){
+        header.style.backgroundColor= '#000000ff';
+    }
+    else{
+        header.style.backgroundColor='transparent';
+    }
+});
