@@ -228,6 +228,9 @@ nav{
     .advantages{
         padding: 0 20px;
     }
+    nav{
+        padding-right: 50px;
+    }
 }
 
 /* Membership Section */
