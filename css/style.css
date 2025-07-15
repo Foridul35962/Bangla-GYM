@@ -332,12 +332,11 @@ li{
     color: white;
 }
 
-.about-item{
-    display: flex;
+.about-content{
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
 #about-txt p{
@@ -348,15 +347,35 @@ li{
     padding: 30px 0;
 }
 
-#slider img{
+.about-img{
+    position: relative;
+    width: 100%;
+}
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.slider-wrapper{
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.slider-wrapper img{
     width: 100%;
     height: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 #img-controlar{
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    align-items: center;
 }
 
 #arrow-controler{
@@ -371,14 +390,14 @@ li{
     cursor: pointer;
 }
 
-#indicator{
+.slider-indicator{
+    position: static;
     display: flex;
-    align-items: center;
     gap: 10px;
     transform: none;
 }
 
-#indicator span{
+.indicator{
     height: 5px;
     width: 30px;
     background-color: white;
@@ -386,14 +405,19 @@ li{
     color: white;
 }
 
+.indicator.active{
+    background-color: yellow;
+}
+
 @media(max-width:770px){
-    .about-item{
+    .about-content{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (min-width: 770px) and (max-width: 1260px){
-    .about-item{
-        padding: 100px 20px;
+    .about-content{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

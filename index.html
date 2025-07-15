@@ -107,38 +107,44 @@
             </div>
         </div>
     </section>
+    <!-- About Section -->
     <section class="about" id="about">
-        <div class="container about-item">
-            <div id="about-txt">
-                <h2>About us</h2>
-                <p>BanglaGYM is a leading fitness center located near Grushevka metro station, offering over 1500 sq. m of
-                    space dedicated to top-of-the-line workout equipment from leading brands such as Hammer Strength,
-                    Life Fitness, and TechnoGym.</p>
-                <p>With affordable membership options, BanglaGYM is accessible to everyone who wants to reach their fitness
-                    goals, whether it's building strength, increasing endurance, or losing weight.</p>
-                <p>Certified trainers at BanglaGYM provide expert guidance and support to develop personalized workout plans
-                    tailored to each individual's needs and goals.</p>
-            </div>
-            <div id="about-img">
-                <div id="slider">
-                    <img src="./images/gym-1.png" alt="gym-1">
+        <div class="container">
+            <div class="about-content">
+                <div id="about-txt">
+                    <h2>About us</h2>
+                    <p>BanglaGYM is a leading fitness center located near Grushevka metro station, offering over 1500 sq. m of
+                        space dedicated to top-of-the-line workout equipment from leading brands such as Hammer Strength,
+                        Life Fitness, and TechnoGym.</p>
+                    <p>With affordable membership options, BanglaGYM is accessible to everyone who wants to reach their fitness
+                        goals, whether it's building strength, increasing endurance, or losing weight.</p>
+                    <p>Certified trainers at BanglaGYM provide expert guidance and support to develop personalized workout plans
+                        tailored to each individual's needs and goals.</p>
                 </div>
-                <div id="img-controlar">
-                    <div id="indicator">
-                        <span></span>
-                    </div>
-                    <div id="arrow-controler">
-                        <button class="arrow" id="left-arrow">
-                            <img src="./images/icons/arrow-left.png" alt="left-arrow">
-                        </button>
-                        <button class="arrow" id="right-arrow">
-                            <img src="./images/icons/arrow-right.png" alt="right-arrow">
-                        </button>
+                <div class="about-img">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="sliderWrapper">
+                            <!-- creating images using JS -->
+                        </div>
+                        <div id="img-controlar">
+                            <div class="slider-indicator" id="sliderIndicator">
+                                <!-- creating span using JS -->
+                            </div>
+                            <div id="arrow-controler">
+                                <button class="arrow" id="left-arrow">
+                                    <img src="./images/icons/arrow-left.png" alt="left-arrow">
+                                </button>
+                                <button class="arrow" id="right-arrow">
+                                    <img src="./images/icons/arrow-right.png" alt="right-arrow">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="./JS/slider.js"></script>
     <script src="./JS/membership.js"></script>
     <script src="./JS/app.js"></script>
 </body>
