@@ -2,7 +2,7 @@ const animation = ScrollReveal({
     distance:'50px',
     duration: 1500,
     delay: 300,
-    reset: true,
+    reset: false,
     easing: 'ease'
 });
 
