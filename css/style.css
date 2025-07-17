@@ -535,7 +535,8 @@ footer{
 
 .footer-details{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 60px;
     justify-content: center;
     align-items: center;
@@ -547,6 +548,7 @@ footer{
 
 .detail{
     line-height: 120%;
+    max-width: 60%;
 }
 
 .contact-info{
